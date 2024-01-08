@@ -1,6 +1,6 @@
 /* Global styles for the body */
 body {
-    background-image: url(/assets/bg-image.jpg);
+    background-image: url(./assets/bg-image.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
