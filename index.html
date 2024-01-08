@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. or Ms.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center light-glassy">
+        <div class="inner-flex">
+            <div class="column">
+                <h3>Mr. or Ms. ?</h3>
+                <form id="form">
+                    <div>
+                        <label>Name:</label>
+                        <input type="text" id="name" placeholder="Enter a name...">
+                    </div>
+                    <div class="radio-group">
+                        <div>
+                            <input type="radio" id="male" value="Male" name="gender" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" value="Female" name="gender">
+                            <label for="femaile">Female</label>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="handleSave()">Save</button>
+                </form>
+            </div>
+            <div class="column">
+                <div>
+                    <h3>Prediction</h3>
+                    <p id="prediction">See Prediction Resuluts Here</p>
+                </div>
+                <div class="dashed">
+                    <h3>Saved Answer</h3>
+                    <p id="saved-answer">See Previously Saved Gender Here</p>
+                    <button type="button" onclick="handleClear()">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="error_container" class="bottom dark-glassy error-group" is="">
+        <p id="error"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Global styles for the body */
+body {
+    background-image: url(/assets/bg-image.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Palatino Linotype', 'Palatino', serif;
+}
+
+/* Styles for a centered container with padding and margin */
+.center {
+    padding: 70px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styles for a bottom container with padding and margin */
+.bottom {
+    padding: 30px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Glassy effect with light background */
+.light-glassy {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* Glassy effect with dark background */
+.dark-glassy {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* Flex container with inner gap */
+.inner-flex {
+    display: flex;
+    gap: 128px;
+}
+
+/* Styles for a column container */
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+/* Styles for a form container with flex column layout and gap between items */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styles for a dashed border container */
+div .dashed {
+    border-style: dashed;
+    padding: 10px;
+}
+
+/* Styles for a radio group container with flex column layout */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for labels inside a radio group */
+.radio-group label {
+    font-size: medium;
+}
+
+/* Styles for an error group container with hidden display */
+.error-group {
+    display: none;
+    flex-direction: row;
+}
+
+/* Styles for error messages inside an error group */
+.error-group p {
+    font-size: bold;
+    color: red;
+    font-family: sans-serif;
+}
